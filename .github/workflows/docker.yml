@@ -8,6 +8,9 @@ on:
       - "v*"
   workflow_dispatch:
 
+env:
+  REGISTRY_IMAGE: ghcr.io/superworldsavior/mcp-dfm
+
 jobs:
   quality:
     uses: ./.github/workflows/quality.yml
@@ -59,7 +62,7 @@ jobs:
       - uses: docker/metadata-action@v5
         id: meta
         with:
-          images: ghcr.io/casys-ai/mcp-dfm
+          images: ${{ env.REGISTRY_IMAGE }}
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
             type=semver,pattern={{version}}
