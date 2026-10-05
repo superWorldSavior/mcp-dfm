@@ -339,7 +339,7 @@ packages (`@casys/mcp-view@0.9.3`, `@casys/mcp-view-contracts@0.1.0`,
 `@casys/mcp-view-components@0.9.0`) and does not fall back to a published SDK:
 
 ```bash
-git clone https://github.com/Casys-AI/mcp-server.git .build/mcp-server
+git clone https://github.com/superWorldSavior/mcp-platform.git .build/mcp-server
 git -C .build/mcp-server checkout b08802df353bb25d25a1c8d64b22ea61b5287ae0
 export MCP_VIEW_LOCAL_ROOT="$PWD/.build/mcp-server/packages/view"
 export MCP_VIEW_CONTRACTS_LOCAL_ROOT="$PWD/.build/mcp-server/packages/view-contracts"
